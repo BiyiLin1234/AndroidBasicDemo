@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidBasicDemo</string>
+    <string name="greet">Hello World</string>
+    <string name="default_user_name">User</string>
 </resources>
