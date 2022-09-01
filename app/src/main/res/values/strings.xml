@@ -2,4 +2,11 @@
     <string name="app_name">AndroidBasicDemo</string>
     <string name="greet">Hello World</string>
     <string name="default_user_name">User</string>
+    <string name="button">button</string>
+    <string name="open_second_activity">打开SecondActivity</string>
+    <string name="open_url">open url</string>
+    <string name="input_url_hint">input url</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="camera_image">camera iamge</string>
 </resources>

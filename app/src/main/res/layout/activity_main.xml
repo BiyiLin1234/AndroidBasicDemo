@@ -16,4 +16,62 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
+    <Button
+        android:id="@+id/start_second_activity"
+        android:text="@string/open_second_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/greet_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/start_second_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <EditText
+            android:id="@+id/input_uri"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingHorizontal="15dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_url_hint"
+            android:autofillHints="www.baidu.com"
+            android:inputType="textUri">
+        </EditText>
+        <!--            android:entries="@array/uri_type"-->
+        <Spinner
+            android:id="@+id/uri_type"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:minHeight="30dp"
+            android:layout_height="wrap_content">
+        </Spinner>
+        <Button
+            android:id="@+id/open_uri_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="@string/open_url">
+        </Button>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greet_tv"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/camera_image" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
