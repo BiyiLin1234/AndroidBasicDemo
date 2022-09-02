@@ -67,7 +67,13 @@ class MainActivity : AppCompatActivity() {
     private fun initView() {
         initGreet()
         initOpenSecondActivityBtn()
+        initOpenSingleInstanceBtn()
+    }
 
+    private fun initOpenSingleInstanceBtn() {
+        findViewById<Button>(R.id.open_single_instance_activity).setOnClickListener { view ->
+            startActivity(Intent(this, SingleInstanceActivity::class.java))
+        }
     }
 
     private fun initSpinner() {
