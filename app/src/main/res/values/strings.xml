@@ -9,4 +9,5 @@
     <string name="add">Add</string>
     <string name="remove">Remove</string>
     <string name="camera_image">camera iamge</string>
+    <string name="open_single_instance">open single instance</string>
 </resources>
