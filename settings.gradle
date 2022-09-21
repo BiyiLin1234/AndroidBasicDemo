@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 rootProject.name = "AndroidBasicDemo"
 include ':app'
 include ':lib_demo'
+include ':ch6_broadcast_demo'
+include ':biggernumbergame'
